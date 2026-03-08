@@ -6,6 +6,7 @@
 
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
+#include <dt-bindings/zmk/ext_power.h>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/outputs.h>
 #include <dt-bindings/zmk/pointing.h>
@@ -80,10 +81,10 @@
         L3 {
             display-name = "3";
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans                    &caps_word   &caps_word  &gresc     &trans     &kp C_BRIGHTNESS_MINIMUM  &kp C_AC_ZOOM_IN
-&trans  &trans  &trans  &trans  &trans  &trans                    &key_repeat  &kp A       &mkp MB2   &kp W      &kp C_BRIGHTNESS_INC      &kp C_AC_ZOOM_OUT
-&trans  &trans  &trans  &trans  &trans  &trans                    &mt A B      &kp LC(X)   &kp LC(C)  &kp LC(V)  &kp C_BRI_UP              &kp CLEAR
-&trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans       &trans      &trans     &trans     &kp C_BRI_INC             &kp KP_CLEAR
+&trans  &trans  &trans  &trans  &trans  &trans                    &caps_word   &caps_word  &gresc     &ext_power EP_OFF  &kp C_BRIGHTNESS_MINIMUM  &kp C_AC_ZOOM_IN
+&trans  &trans  &trans  &trans  &trans  &trans                    &key_repeat  &kp A       &mkp MB2   &kp W              &kp C_BRIGHTNESS_INC      &kp C_AC_ZOOM_OUT
+&trans  &trans  &trans  &trans  &trans  &trans                    &mt A B      &kp LC(X)   &kp LC(C)  &kp LC(V)          &kp C_BRI_UP              &kp CLEAR
+&trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans       &trans      &trans     &trans             &kp C_BRI_INC             &kp KP_CLEAR
                 &trans  &trans  &trans  &to 2   &trans    &trans  &to 0        &trans      &trans     &trans
             >;
 
