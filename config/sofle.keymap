@@ -79,6 +79,7 @@
         };
 
         L3 {
+            display-name = "3";
             bindings = <
 &trans  &trans  &trans  &trans  &trans  &trans                    &caps_word   &ext_power EP_TOG  &gresc     &trans     &kp C_BRI_MIN         &kp C_AC_ZOOM_IN
 &trans  &trans  &trans  &trans  &trans  &trans                    &key_repeat  &kp A              &mkp MB2   &kp W      &kp C_BRIGHTNESS_INC  &kp C_AC_ZOOM_OUT
@@ -91,7 +92,6 @@
                 <&inc_dec_kp RIGHT LEFT>,
                 <&inc_dec_kp C_BRI_INC C_BRI_DEC>;
 
-            label = "3";
         };
     };
 };
