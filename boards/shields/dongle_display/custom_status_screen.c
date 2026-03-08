@@ -7,7 +7,6 @@
 #include "custom_status_screen.h"
 #include "widgets/battery_status.h"
 #include "widgets/modifiers.h"
-#include "widgets/bongo_cat.h"
 #include "widgets/layer_status.h"
 #include "widgets/output_status.h"
 #include "widgets/hid_indicators.h"
@@ -19,7 +18,6 @@ static struct zmk_widget_output_status output_status_widget;
 static struct zmk_widget_layer_status layer_status_widget;
 static struct zmk_widget_peripheral_battery_status peripheral_battery_status_widget;
 static struct zmk_widget_modifiers modifiers_widget;
-#b static struct zmk_widget_bongo_cat bongo_cat_widget;
 
 #if IS_ENABLED(CONFIG_ZMK_HID_INDICATORS)
 static struct zmk_widget_hid_indicators hid_indicators_widget;
